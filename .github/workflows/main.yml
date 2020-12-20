@@ -35,8 +35,7 @@ jobs:
           pwd
           ls -l
           sudo apt-get update && sudo apt-get install tree -y
-          tree -d -H '.' -L 2 --noreport --charset utf-8 >index.html
-          git status
+          tree -d -H '.' -L 3 --noreport --charset utf-8 >index.html
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
